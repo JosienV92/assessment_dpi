@@ -1,0 +1,47 @@
+<template name="pageBody">
+    <div class="pageBody">
+        <div class="pageText">
+            <h1>Lorem Ipsum Title</h1>
+            <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat ultrices elit,
+                sed rutrum nibh posuere nec. Cras fringilla arcu ac eros posuere, at semper erat gravida.
+                Suspendisse non tortor tempor, volutpat magna eget, semper elit. Sed eget tempus nunc,
+                nec ultrices urna. Proin quis risus in est dapibus dignissim. Quisque eget elit lobortis,
+                efficitur arcu in, tempor metus. Nullam et convallis augue.
+            </h5>
+            <p>
+                Duis non maximus lorem, a iaculis massa. Maecenas auctor massa quis eleifend posuere. Morbi at laoreet
+                purus, id placerat nisi. Curabitur dictum justo urna, id condimentum odio vestibulum quis. Donec aliquam,
+                nulla ut dapibus malesuada, urna risus sollicitudin metus, et ultrices purus risus sed massa. Nullam eleifend
+                augue sed sapien ultrices, eu malesuada ex blandit. Donec pulvinar, mauris elementum fermentum fringilla,
+                nulla mi imperdiet justo, nec malesuada metus nibh non sem. Pellentesque posuere quam et ipsum ultricies
+                molestie. Aliquam feugiat, urna vitae tempus ullamcorper, nunc odio fermentum ex, in eleifend arcu diam ac
+                diam. Phasellus aliquet dignissim magna. Cras pretium vestibulum arcu, id congue neque placerat ut. Nunc
+                faucibus eleifend faucibus. Nullam nisl augue, ornare vel velit vitae, sollicitudin venenatis arcu. Phasellus
+                quis magna ut ex tincidunt sollicitudin. Curabitur pulvinar id libero nec vestibulum. In non tortor magna.
+            </p>
+        </div>
+        <div class="pageForm">
+            <form class="pageForm">
+                <label for="firstName">Voornaam*</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Voornaam">
+                <label for="lastName">Achternaam*</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Achternaam*">
+                <label for="emailAddress">E-mailadres*</label>
+                <input type="text" id="emailAddress" name="emailAddress" placeholder="E-mailadres*">
+                <label for="abc">Selecteer een optie*</label>
+                <select id="abc" name="abc">
+                    <option value="a">A</option>
+                    <option value="b">B</option>
+                    <option value="c">C</option>
+                </select>
+                {{#if cSelected}}
+                    <textarea name="remarks" placeholder="Opmerkingen"></textarea>
+                {{/if}}
+                <button type="submit" class="submitFormBtn">Verzenden</button>
+                {{#if formError}}
+                    <p>Vul de verplichte velden in.</p>
+                {{/if}}
+            </form>
+        </div>
+    </div>
+</template>
