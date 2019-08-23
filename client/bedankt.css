@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300");
+body h1 {
+  margin: 25% 35%;
+  display: inline-block;
+  font-family: "Open Sans Condensed", sans-serif;
+  background-color: #d8d8d8;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+}
+
+/*# sourceMappingURL=bedankt.css.map */
